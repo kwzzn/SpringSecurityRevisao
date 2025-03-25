@@ -1,0 +1,12 @@
+show tables;
+describe user_tb;
+
+insert into user_tb(username, password) values("joana", "123");
+insert into user_tb(username, password) values("kauan", "123");
+insert into user_tb(username, password) values("mateus", "123");
+insert into user_tb(username, password) values("timoteo", "123");
+
+select * from user_tb;
+
+
+
