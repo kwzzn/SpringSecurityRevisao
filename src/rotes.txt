@@ -1,0 +1,29 @@
+Login User (Post): localhost:8081/api/auth/login
+
+body: {
+          "username": "kauan",
+          "password": "123"
+      }
+
+Logout User (Post): localhost:8081/api/auth/logout
+
+body:
+
+Get Teste (Get): localhost:8081/teste
+
+body: {
+          "id": 1
+      }
+
+MySQL Commands:
+
+show tables;
+
+select * from user_tb;
+
+select * from user_authentification;
+
+describe usuario_authentication;
+
+insert into user_authentification (account_non_expired, account_non_locked, credentials_non_expired, enabled, password, username) values (true, true, true, true, "123", "kauan"), (true, true, true, true, "321", "joana");
+insert into user_tb (email, endereco, authentication_id) values ("kauan_eggert@gmail.com", "endereco1", 1), ("joana_voigt@gmail.com", "endereco2", 2);
