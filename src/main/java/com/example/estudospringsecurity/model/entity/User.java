@@ -1,5 +1,6 @@
 package com.example.estudospringsecurity.model.entity;
 
+import com.example.estudospringsecurity.security.model.entity.UserAuthentification;
 import jakarta.persistence.*;
 import jdk.jfr.Enabled;
 import lombok.*;
@@ -14,9 +15,10 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
+    private String email;
+    private String endereco;
 
-    private String username;
-
-    private String password;
+    @OneToOne
+    private UserAuthentification authentication;
 }

@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 public class testeController {
 
-    private UserRepository repository;
-
     @GetMapping
     public String teste() {
         return "MI74";
